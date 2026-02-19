@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-columns: 133px 1fr;
+  grid-template-rows: 100px 1fr 50px;
+  grid-template-areas: "header header" "sidebar main" "footer footer";
+}
+
+header {
+  background-color: lightblue;
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10em;
+  flex-flow: wrap;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav a:hover {
+  color: red;
+}
+
+.nav-center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-title {
+  display: flex;
+  align-items: flex-start;
+}
+
+.sidebar {
+  background-color: palevioletred;
+  grid-area: sidebar;
+  flex: 1;
+}
+
+.sidebar-txt {
+  margin: 0;
+  text-align: center;
+}
+
+.sidebar-links a {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  text-align: left;
+  margin: 1em;
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar-links a:hover {
+  color: red;
+}
+
+main {
+  background-color: lightpink;
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  gap: 1em;
+  flex-flow: wrap;
+}
+
+.card {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 1em;
+  border: 3px solid grey;
+  border-radius: 10px;
+  flex: 1;
+  width: 12em;
+}
+
+.card p {
+  flex-grow: 1;
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: lightcoral;
+}
+
+.card a:hover {
+  color: red;
+}
+
+footer {
+  background-color: tan;
+  grid-area: footer;
+}
+
+.footer-txt {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p {
+  margin: 0px;
+  padding: 1rem;
+}
